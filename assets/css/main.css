@@ -7,6 +7,83 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.technologies {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	margin-top: 10px;
+}
+
+.tech-box {
+	display: inline-block;
+	padding: 4px 8px;
+	margin: 3px;
+	border-radius: 10px;
+	background-color: #f9fafb;
+	color: #1a202c;
+	font-family: 'Inter', Arial, sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	transition: all 0.3s ease;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle black shadow */
+}
+
+
+.tech-box.python {
+	background-color: #ffde57; /* Light Yellow */
+	color: #333; /* Text Color */
+	text-shadow: 1px 1px 2px #eee; /* Subtle black shadow */
+}
+
+.tech-box.pytorch {
+	background-color: #ee4c2c; /* PyTorch's Brand Red */
+	color: #fff; /* White Text */
+}
+
+.tech-box.tiledb {
+	background-color: #004d99; /* Deep blue */
+	color: #fff;
+
+}
+
+.tech-box.cpp {
+	background-color: #00599c; /* C++ Blue */
+	color: #fff;
+
+}
+
+.tech-box.tensorflow {
+	background-color: #ff6f00; /* TensorFlow Orange */
+	color: #fff;
+
+}
+
+.tech-box.cuda-cpp {
+	background-color: #76b900; /* NVIDIA Green */
+	color: #fff;
+
+}
+
+.tech-box.matplotlib {
+	background-color: #11557c; /* Matplotlib Blue */
+	color: #fff;
+
+}
+
+.tech-box.numpy {
+	background-color: #013243; /* NumPy Blue */
+	color: #fff;
+
+}
+
+.tech-box.pandas {
+	background-color: #150458; /* Dark Purple */
+	color: #fff;
+
+}
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
