@@ -2275,14 +2275,15 @@ input, select, textarea {
 		/* Wrappers */
 
 			.wrapper {
-				padding: 5em 0 5em 0;
+				padding: 2em 0; /* Reduce top and bottom padding */
 				text-align: center;
 			}
 
 				.wrapper.style4 .row-special {
-					margin: 2em 0 0 0;
-					padding: 2em 0 2em 0;
+					margin: 1em 0 0; /* Reduce top margin */
+					padding: 0; /* Remove extra padding */
 				}
+
 
 		/* Articles */
 
