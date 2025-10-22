@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
 @import url("fontawesome-all.min.css");
+:root {
+  --bg: #ffffff;
+  --text: #222222;
+  --accent: #43B3E0;
+  --nav-bg: #282828;
+  --box-bg: #ffffff;
+}
 
 /*
 	Miniport by HTML5 UP
@@ -72,13 +79,13 @@
 
 }
 
-.tech-box.numpy {
+.tech-box.cupy {
 	background-color: #013243; /* NumPy Blue */
 	color: #fff;
 
 }
 
-.tech-box.pandas {
+.tech-box.pyvista {
 	background-color: #150458; /* Dark Purple */
 	color: #fff;
 

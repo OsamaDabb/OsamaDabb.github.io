@@ -9,7 +9,7 @@
 	<title>Osama Dabbousi</title>
 	<meta charset="UTF-8" />
 	<meta name="description" 
-		  content="Learn more about Osama Dabbousi, a computer scientist specializing in numerical programming, high performance computing and deep learning.">
+		  content="Learn more about Osama Dabbousi, a computer scientist specializing in high performance, GPGPU programming and scientific computing.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -24,7 +24,7 @@
 			<li><a href="#skills">Skills</a></li>
 			<li><a href="#portfolio">Portfolio</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<li><a href="files/Osama Dabbousi Resume - 2025.pdf" download="Resume-Osama_Dabbousi.pdf">Resume</a></li>
+			<li><a href="files/OsamaDabbousi_Resume.pdf" download="Resume-Osama_Dabbousi.pdf">Resume</a></li>
 
 		</ul>
 	</nav>
@@ -38,7 +38,7 @@
 				</div>
 				<div class="col-8 col-7-large col-12-medium">
 					<header>
-						<h1>Hi! I'm <strong>Osama Dabbousi</strong>.</h1>
+						<h1>Hi! I'm <strong>Osama</strong>.</h1>
 					</header>
 					<p>
 						Welcome to my portfolio! I'm a student working towards my MSc in Computer Science from KAUST.
@@ -55,8 +55,8 @@
 	<article id="skills" class="wrapper style2">
 		<div class="container">
 			<header>
-				<h2>Skills at the Intersection of Science and Technology</h2>
-				<p>My interests lie in impactful solutions in deep learning, data management, and software development.</p>
+				<h2>Skills & Interests</h2>
+				<p>My current interests surround parallel and high-performance computing, and how our algorithms and data-structures can take full advantage of them.</p>
 			</header>
 			<div class="row aln-center">
 				<div class="col-4 col-6-medium col-12-small">
@@ -64,7 +64,7 @@
 						<i class="material-icons" style="font-size: 64px; color: #001F3F">code</i>
 						<h3>Deep Learning & AI</h3>
 						<p>
-							Designing and fine-tuning neural network pipelines for tasks ranging from chess and backgammon to geological thin-sections and cancer classification.
+							My undergraduate education involved designing and fine-tuning neural network pipelines for tasks ranging from chess and backgammon to geological thin-sections and cancer classification.
 						</p>
 					</section>
 				</div>
@@ -73,17 +73,16 @@
 						<i class="material-icons" style="font-size: 64px; color: #001F3F">insights</i>
 						<h3> High-Performance Computing </h3>
 						<p>
-							Using parallel computation and intelligent algorithms to optimize the execution of heavy-duty computations like in visual ray-tracing and acoustic beam-tracing.
+							My Master's has focused on using parallel computation and intelligent algorithms to optimize the execution of heavy-duty computations like visual ray-tracing, image compression and acoustic beam-tracing.
 						</p>
 					</section>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
 						<i class="material-icons" style="font-size: 64px; color: #001F3F">terminal</i>
-						<h3>Backend Development</h3>
+						<h3>Scientific Computing</h3>
 						<p>
-							Implementing scalable, cloud-based systems and user-friendly interfaces for distributed training, query handling,
-							and web applications integrating cutting-edge machine learning models.
+							Scientific models and simulations provide some of the most important (and satisfying) applications of HPC & AI. Much of my work in those fields intersects with topics like acoustics & computational fluid dynamics. 
 						</p>
 					</section>
 				</div>
@@ -102,16 +101,29 @@
 			<div class="row">
 				<div class="col-4 col-6-medium col-12-small">
 					<article class="box style2">
-						<a href="https://github.com/OsamaDabb/Chess_anti_cheat" class="image featured">
-							<img src="images/ChessGAN_puzzle_example_border.png" alt="Chess Puzzle Being Solved Correctly by ChessGAN" />
+						<a href="files/GaussianBeamTracing_OsamaDabbousi.pdf" class="image featured"><img src="images/GBT_image.jpg" alt="" /></a>
+						<h3><a href="files/GaussianBeamTracing_OsamaDabbousi.pdf">GPU-accelerated Gaussian Beam-Tracing</a></h3>
+						<p>
+							Multi-GPU implementation of acoustic modeling technique known as Gaussian-Beam Tracing, developed as an in-house library.
+							Handles arbitrary user-defined meshes and noise-sources, and visualizes and plots results.
+						</p>
+						<span class="tech-box python">Python</span>
+						<span class="tech-box cpp">C++</span>
+						<span class="tech-box cuda-cpp">CUDA</span>
+						<span class="tech-box cupy">CuPy</span>
+						<span class="tech-box pyvista">PyVista</span>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="https://github.com/OsamaDabb/raytracing-graphics" class="image featured">
+							<img src="images/raytracing_image.jpg" alt="ray-tracing sample image" />
 						</a>
-						<h3><a href="https://github.com/OsamaDabb/Chess_anti_cheat">ChessGAN</a></h3>
-						<p>An adversarial architecture which trains a chess agent by penalizing non-humanlike moves.</p>
-						<div class="technologies">
-							<span class="tech-box python">Python</span>
-							<span class="tech-box pytorch">PyTorch</span>
-							<span class="tech-box pandas">Pandas</span>
-						</div>
+						<h3><a href="https://github.com/OsamaDabb/raytracing-graphics">Raytracing from Scratch</a></h3>
+						<p>
+							Raytracing simulation built with no external libraries in C++, which handles shading, shadows, reflection and movement & rotation of objects. 
+						</p>
+						<span class="tech-box cpp">C++</span>
 					</article>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
@@ -124,17 +136,16 @@
 						<p>SVD and quantization based compression of the large-scale Red Sea temperature dataset (shown above).</p>
 						<span class="tech-box python">Python</span>
 						<span class="tech-box pytorch">PyTorch</span>
-						<span class="tech-box numpy">NumPy</span>
 					</article>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
 					<article class="box style2">
-						<a href="https://github.com/OsamaDabb/FiniteDifferencesCUDA/tree/main" class="image featured">
+						<a href="https://github.com/OsamaDabb/FiniteDifferencesCUDA/tree/main" class="image featured"> 	
 							<img src="images/temperature_animation-cropped.gif" alt="" />
 						</a>
 						<h3>
 							<a href="https://github.com/OsamaDabb/FiniteDifferencesCUDA/tree/main">
-								Parallelized Heat Transfer Simulation with CUDA
+								Parallel Heat Transfer Simulation with CUDA
 							</a>
 						</h3>
 						<p>GPU-powered heat transfer simulation using CUDA and finite differences.</p>
@@ -145,14 +156,14 @@
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
 					<article class="box style2">
-						<a href="https://github.com/OsamaDabb/NeuralNetworksincpp" class="image featured">
-							<img src="images/NNcodesnippet2_border.png" alt="" />
+						<a href="https://github.com/OsamaDabb/Chess_anti_cheat" class="image featured">
+							<img src="images/ChessGAN_puzzle_example_border.png" alt="Chess Puzzle Being Solved Correctly by ChessGAN" />
 						</a>
-						<h3><a href="https://github.com/OsamaDabb/NeuralNetworksincpp">Neural Network in C++</a></h3>
-						<p>
-							Feed-forward network builder in C++, with autograd and layer flexibility.
-						</p>
-						<span class="tech-box cpp">C++</span>
+						<h3><a href="https://github.com/OsamaDabb/Chess_anti_cheat">ChessGAN</a></h3>
+						<p>Adversarial architecture which trains a chess agent by penalizing non-humanlike moves.</p>
+						<span class="tech-box python">Python</span>
+						<span class="tech-box pytorch">PyTorch</span>
+						<span class="tech-box pandas">Pandas</span>
 					</article>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
@@ -161,20 +172,9 @@
 							<img src="images/backgammon_animation.gif" alt="A gif of a game of backgammon played by the MCTS algorithm" />
 						</a>
 						<h3><a href="https://github.com/OsamaDabb/BackgammonNN">Backgammon-AI</a></h3>
-						<p>A backgammon playing agent which uses probabilistic Monte-Carlo tree search for decision-making.</p>
+						<p>Backgammon playing agent which uses probabilistic Monte-Carlo tree search for decision-making.</p>
 						<span class="tech-box python">Python</span>
 						<span class="tech-box tensorflow">Tensorflow</span>
-						<span class="tech-box numpy">NumPy</span>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="https://github.com/OsamaDabb/TheSpotifyGame" class="image featured"><img src="images/SpotifyGame_UI_border.png" alt="" /></a>
-						<h3><a href="https://github.com/OsamaDabb/TheSpotifyGame">The Spotify Game</a></h3>
-						<p>
-							A music navigation game powered by Spotify API calls.
-						</p>
-						<span class="tech-box python">Python</span>
 					</article>
 				</div>
 			</div>
