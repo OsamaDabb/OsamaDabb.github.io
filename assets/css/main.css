@@ -3,7 +3,7 @@
 :root {
   --bg: #ffffff;
   --text: #222222;
-  --accent: #43B3E0;
+  --accent: var(--accent);
   --nav-bg: #282828;
   --box-bg: #ffffff;
 }
@@ -196,7 +196,7 @@ input, select, textarea {
 		-webkit-transition: color .2s ease-in-out;
 		-ms-transition: color .2s ease-in-out;
 		transition: color .2s ease-in-out;
-		color: #43B3E0;
+		color: var(--accent);
 		text-decoration: underline;
 	}
 
@@ -210,7 +210,7 @@ input, select, textarea {
 
 	b, strong {
 		font-weight: 600;
-		color: #3e3e3e;
+		color: var(--text);
 	}
 
 	i, em {
@@ -236,7 +236,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #3e3e3e;
+		color: var(--text);
 		margin: 0 0 0.75em 0;
 	}
 
@@ -1594,7 +1594,7 @@ input, select, textarea {
 /* Form */
 
 	form label {
-		color: #3e3e3e;
+		color: var(--text);
 		font-weight: 700;
 		display: block;
 		margin: 0 0 0.5em 0;
@@ -1616,7 +1616,7 @@ input, select, textarea {
 		font-size: 1em;
 		border-radius: 8px;
 		border: solid 1px #ddd;
-		background: #fff;
+		background: var(--bg);
 		color: #bbb;
 		box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025);
 		width: 100%;
@@ -1627,7 +1627,7 @@ input, select, textarea {
 		form input[type=password]:focus,
 		form select:focus,
 		form textarea:focus {
-			background: #fafafa;
+			background: var(--box-bg);
 			box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025), inset 0px 0px 2px 1px #43bff0;
 		}
 
@@ -1690,7 +1690,7 @@ input, select, textarea {
 
 			table.default thead {
 				background: #4f4f4f;
-				color: #fff;
+				color: var(--bg);
 			}
 
 /* Section/Article */
@@ -1762,7 +1762,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		position: relative;
 		display: inline-block;
-		color: #fff !important;
+		color: var(--text) !important;
 		text-decoration: none;
 		font-weight: 700;
 		border: 0;
@@ -1772,7 +1772,7 @@ input, select, textarea {
 		text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
 		overflow: hidden;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-		background-color: #43B3E0;
+		background-color: var(--accent);
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 1.1em;
 		max-width: 24em;
@@ -1784,7 +1784,7 @@ input, select, textarea {
 		button:hover,
 		.button:hover {
 			background-color: #43bff0;
-			color: #fff !important;
+			color: var(--text) !important;
 		}
 
 		input[type="button"]:active,
@@ -1820,7 +1820,7 @@ input, select, textarea {
 			button.alt:hover,
 			.button.alt:hover {
 				background-color: #4f4f4f;
-				color: #fff !important;
+				color: var(--text) !important;
 			}
 
 			input[type="button"].alt:active,
@@ -1892,7 +1892,7 @@ input, select, textarea {
 					transition: background-color .2s ease-in-out;
 					background-color: #444;
 					border-radius: 6px;
-					box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
+					box-shadow: inset 0px 0px 0px 1px var(--nav-bg), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
 					color: #2E2E2E !important;
 					display: block;
 					font-size: 26px;
@@ -1930,7 +1930,7 @@ input, select, textarea {
 				}
 
 				ul.social li a.fa-github {
-					background-color: #FAFAFA;
+					background-color: var(--box-bg);
 				}
 
 				ul.social li a.fa-rss {
@@ -1997,11 +1997,14 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: #fff;
-		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+		background: #2E2E2E url("images/bg.png");
+		background-blend-mode: overlay; /* ensures light pattern on dark bg */
+		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15),
+					0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		text-align: center;
 		padding: 2em;
 	}
+
 
 		.box.style1 {
 			padding: 3em 2em 3.5em 2em;
@@ -2081,17 +2084,25 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-image: none;
-			background-color: #fff;
+			background-color: var(--bg);
 		}
 
 		.wrapper.style2 {
-			background-color: #fafafa;
-			text-shadow: 1px 1px 0px #fff;
+			background-image:
+				linear-gradient(rgba(90, 60, 30, 0.35), rgba(90, 60, 30, 0.35)),
+				url("images/bg.png");
+			background-color: #1a1a1a; /* fallback base */
+			background-blend-mode: overlay;
+			background-repeat: repeat;
+			background-size: auto;
+			color: var(--text);
 		}
 
+
+
 		.wrapper.style3 {
-			background-color: #f4f4f4;
-			text-shadow: 1px 1px 0px #fff;
+			background-color: var(--box-bg);
+			text-shadow: 1px 1px 0px var(--bg);
 		}
 
 		.wrapper.style4 {
@@ -2101,7 +2112,7 @@ input, select, textarea {
 		}
 
 			.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
-				color: #fff;
+				color: var(--bg);
 			}
 
 			.wrapper.style4 form input[type=text],
@@ -2109,7 +2120,7 @@ input, select, textarea {
 			.wrapper.style4 form select,
 			.wrapper.style4 form textarea {
 				border: none;
-				background: #282828;
+				background: var(--nav-bg);
 			}
 
 				.wrapper.style4 form input[type=text]:focus,
@@ -2122,7 +2133,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		background-color: #282828;
+		background-color: var(--nav-bg);
 		text-align: center;
 		position: fixed;
 		left: 0;
@@ -2152,19 +2163,19 @@ input, select, textarea {
 			transition: background-color .2s ease-in-out;
 			position: relative;
 			display: block;
-			color: #fff;
+			color: var(--text);
 			text-decoration: none;
 			outline: 0;
 			font-weight: 600;
 			border-radius: 8px;
-			color: #fff;
+			color: var(--text);
 			height: 2.5em;
 			line-height: 2.5em;
 			padding: 0 1.25em;
 		}
 
 			#nav a:hover {
-				color: #fff !important;
+				color: var(--text) !important;
 				background: #383838;
 			}
 
@@ -2181,7 +2192,7 @@ input, select, textarea {
 					margin-left: -0.75em;
 					border-left: solid 0.75em transparent;
 					border-right: solid 0.75em transparent;
-					border-top: solid 0.6em #282828;
+					border-top: solid 0.6em var(--nav-bg);
 				}
 
 /* Articles */
@@ -2531,4 +2542,28 @@ input, select, textarea {
 
 	}
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #201e1e;
+    --text: #d8cfb8;
+    --accent: #e0a060;
+    --nav-bg: #0d0d1c;
+    --box-bg: #1d1b1b;
+  }
+}
+.wrapper.style2 {
+  background-image:
+    linear-gradient(rgba(90, 60, 30, 0.35), rgba(5, 42, 21,0.35)),
+    url("images/bg.png");
+  background-color: #1a1a1a; /* fallback base */
+  background-blend-mode: overlay;
+  background-repeat: repeat;
+  background-size: auto;
+  color: var(--text);
+}
+
+
+img, .icon {
+  filter: brightness(0.9);
+}
 
