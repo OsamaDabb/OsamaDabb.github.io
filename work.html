@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>Work — Osama Dabbousi</title>
+	<meta charset="UTF-8" />
+	<meta name="description"
+		  content="Projects, writing, and research by Osama Dabbousi: GPU simulation, algorithm design, and more.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+<body class="is-preload">
+
+	<!-- Nav -->
+	<nav id="nav">
+		<ul class="container">
+			<li><a href="index.html">About</a></li>
+			<li><a href="#top">Work</a></li>
+			<li><a href="files/Osama_Dabbousi_CV.pdf" download="CV-OsamaDabbousi.pdf">CV</a></li>
+		</ul>
+	</nav>
+
+	<!-- Intro -->
+	<article id="top" class="wrapper style1">
+		<div class="container">
+			<div class="work-page-intro">
+				<h2>Projects & Writing</h2>
+				<p>
+					A closer look at the things I build and think about,
+					with blog posts in progress that'll go into the 
+					story behind some of the projects.
+				</p>
+			</div>
+		</div>
+	</article>
+
+
+	<!-- Projects -->
+	<article id="projects" class="wrapper style3">
+		<div class="container">
+			<header>
+				<h2>Projects</h2>
+				<p>A mix of my most challenging and rewarding work through the years.</p>
+			</header>
+			<div class="row">
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<div class="video-card-header">
+							<video autoplay loop muted playsinline>
+								<source src="images/kafd_conv_square.mp4" type="video/mp4" />
+							</video>
+						</div>
+						<h3><a href="files/GaussianBeamTracing_OsamaDabbousi.pdf">GPU-accelerated Gaussian Beam-Tracing</a></h3>
+						<p>
+							(M.S. Thesis) Multi-GPU Gaussian Beam Tracing framework for acoustic simulation.
+							Scaled to 2,048 GH200 GPUs on Shaheen III at 91% strong-scaling efficiency.
+						</p>
+						<span class="tech-box python">Python</span>
+						<span class="tech-box cpp">C++</span>
+						<span class="tech-box cuda-cpp">CUDA</span>
+						<span class="tech-box cupy">CuPy</span>
+						<span class="tech-box pyvista">PyVista</span>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="https://github.com/OsamaDabb/raytracing-graphics" class="image featured">
+							<img src="images/raytracing.png" alt="ray-tracing sample image" />
+						</a>
+						<h3><a href="https://github.com/OsamaDabb/raytracing-graphics">Raytracing from Scratch</a></h3>
+						<p>
+							Raytracing simulation in C++ with no external libraries. 
+							Implements shading, shadows, reflections, and object motion.
+						</p>
+						<span class="tech-box cpp">C++</span>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="https://github.com/OsamaDabb/SVD_compression_project" class="image featured">
+							<img src="images/SVD_compression_visualization_border.png"
+								 alt="A graphic comparing images from a dataset before and after compression using SVD" />
+						</a>
+						<h3><a href="https://github.com/OsamaDabb/SVD_compression_project">Large-scale Dataset Compression with SVD</a></h3>
+						<p>SVD and quantisation-based compression of the Red Sea temperature dataset. From 15.4 GB to 865 MB.</p>
+						<span class="tech-box python">Python</span>
+						<span class="tech-box pytorch">PyTorch</span>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="https://github.com/OsamaDabb/FiniteDifferencesCUDA/tree/main" class="image featured">
+							<img src="images/temperature_animation-cropped.gif" alt="" />
+						</a>
+						<h3>
+							<a href="https://github.com/OsamaDabb/FiniteDifferencesCUDA/tree/main">
+								Parallel Heat Transfer Simulation with CUDA
+							</a>
+						</h3>
+						<p>GPU-powered heat transfer simulation using CUDA and finite differences.</p>
+						<span class="tech-box cpp">C++</span>
+						<span class="tech-box cuda-cpp">CUDA</span>
+						<span class="tech-box python">Python</span>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="files/dabbousi_chess_anti_cheat.pdf" class="image featured">
+							<img src="images/ChessGAN_puzzle_example_border.png" alt="Chess Puzzle Being Solved Correctly by ChessGAN" />
+						</a>
+						<h3><a href="files/dabbousi_chess_anti_cheat.pdf">ChessGAN</a></h3>
+						<p>(B.S. Capstone) Adversarial architecture that trains a chess agent to play more human-like.</p>
+						<span class="tech-box python">Python</span>
+						<span class="tech-box pytorch">PyTorch</span>
+						<span class="tech-box pandas">Pandas</span>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="https://github.com/OsamaDabb/BackgammonNN" class="image featured">
+							<img src="images/backgammon_animation.gif" alt="A gif of a game of backgammon played by the MCTS algorithm" />
+						</a>
+						<h3><a href="https://github.com/OsamaDabb/BackgammonNN">Backgammon-AI</a></h3>
+						<p>Backgammon-playing agent using probabilistic Monte Carlo tree search.</p>
+						<span class="tech-box python">Python</span>
+						<span class="tech-box tensorflow">Tensorflow</span>
+					</article>
+				</div>
+			</div>
+		</div>
+	</article>
+
+
+	<!-- Writing / Blog -->
+	<article id="writing" class="wrapper style2">
+		<div class="container">
+			<header>
+				<h2>Writing</h2>
+				<p>Long-form write-ups on projects and technical ideas. Coming soon.</p>
+			</header>
+			<div class="row">
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<div class="post-placeholder-header gbt"></div>
+						<h3><a href="blog-astra-gbt.html">ASTRA-GBT: Scaling Acoustic Simulation to 2,048 GPUs</a></h3>
+						<p>
+							Algorithm design and engineering decisions behind a multi-GPU acoustic simulation framework, scaled to 2,048 GH200 GPUs at 91% strong-scaling efficiency on Shaheen III.
+						</p>
+						<span class="tech-box cuda-cpp">CUDA</span>
+						<span class="tech-box python">Python</span>
+						<span class="tech-box cupy">CuPy</span>
+						<br>
+						<span class="soon-tag">Coming Soon</span>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<div class="post-placeholder-header hardware"></div>
+						<h3><a href="blog-chessggan.html">ChessGAN: Building a Chess Engine That Plays Like a Human</a></h3>
+						<p>
+							The story behind my undergraduate capstone: using an adversarial architecture to train a chess agent that plays more like a person than a computer.
+						</p>
+						<span class="tech-box python">Python</span>
+						<span class="tech-box pytorch">PyTorch</span>
+						<span class="tech-box pandas">Pandas</span>
+						<br>
+						<span class="soon-tag">Coming Soon</span>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<div class="post-placeholder-header teaching"></div>
+						<h3><a href="blog-teaching.html">What Teaching Taught Me</a></h3>
+						<p>
+							A personal account of four semesters as a teaching assistant: what the experience taught me, and what I think matters most for good teaching.
+						</p>
+						<span class="tech-box" style="background:#e2e8f0;color:#1e293b;">Teaching</span>
+						<br>
+						<span class="soon-tag">Coming Soon</span>
+					</article>
+				</div>
+			</div>
+		</div>
+	</article>
+
+
+	<!-- In the News -->
+	<article id="news" class="wrapper style1">
+		<div class="container">
+			<header>
+				<h2>In the News</h2>
+				<p>A few places I've shown up outside the lab.</p>
+			</header>
+			<ul class="news-list">
+				<li>
+					<span class="news-year">2025</span>
+					<div class="news-content">
+						<a href="https://www.bu.edu/cds-faculty/2025/12/12/cds-alum-named-rhodes-scholar/" target="_blank" rel="noopener">CDS Alum Osama Dabbousi Named Rhodes Scholar</a>
+						<span class="news-source">Boston University — Faculty of Computing & Data Sciences</span>
+					</div>
+				</li>
+				<li>
+					<span class="news-year">2025</span>
+					<div class="news-content">
+						<a href="https://www.arabnews.com/node/2622108/saudi-arabia" target="_blank" rel="noopener">Exceptional Saudis headed for Oxford to study as Rhodes Scholars</a>
+						<span class="news-source">Arab News</span>
+					</div>
+				</li>
+				<li>
+					<span class="news-year">2020</span>
+					<div class="news-content">
+						<a href="https://kgsp.kaust.edu.sa/home/2024/08/19/kgsp-graduates-admitted-to-kaust" target="_blank" rel="noopener">KGSP Graduates Admitted to KAUST</a>
+						<span class="news-source">KAUST</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</article>
+
+
+	<!-- Contact -->
+	<article id="contact" class="wrapper style4" style="padding: 2em 0;">
+		<div class="container small" style="padding: 0rem 0;">
+			<h3>Find me on ...</h3>
+			<ul class="social" style="margin: 0rem 0;">
+				<li><a href="https://www.linkedin.com/in/osama-dabbousi/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/OsamaDabb" class="icon brands fa-github"><span class="label">Github</span></a></li>
+				<li><a href="mailto:osama.dabbousi@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="https://www.youtube.com/@osamadabbousi4974" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+			</ul>
+			<footer style="padding:0rem">
+				<p style="font-size:0.9em; color:#64748b;">Design: <a href="http://html5up.net" style="color:#64748b;">HTML5 UP</a></p>
+			</footer>
+		</div>
+	</article>
+
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>

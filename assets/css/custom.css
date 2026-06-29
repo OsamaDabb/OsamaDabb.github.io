@@ -1,0 +1,380 @@
+/* ============================================================
+   Custom theme — overrides Miniport base (main.css).
+   Loaded after main.css so cascade order handles specificity.
+   ============================================================ */
+
+/* ── Variables ──────────────────────────────────────────────── */
+
+:root {
+  --bg:        #f8fafc;
+  --text:      #1e293b;
+  --accent:    #4f46e5;
+  --nav-bg:    #1e293b;
+  --nav-text:  #f1f5f9;
+  --box-bg:    #ffffff;
+  --surface:   #eef2ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:       #111827;
+    --text:     #f1f5f9;
+    --accent:   #818cf8;
+    --nav-bg:   #030712;
+    --nav-text: #f1f5f9;
+    --box-bg:   #1f2937;
+    --surface:  #1e293b;
+  }
+}
+
+/* ── Base ───────────────────────────────────────────────────── */
+
+body {
+  background-color: var(--bg);
+  color: #64748b;
+}
+
+body, input, textarea, select {
+  font-family: 'Inter', 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', 'Open Sans', sans-serif;
+  color: var(--text);
+}
+
+b, strong {
+  color: var(--text);
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent) !important;
+  opacity: 0.75;
+}
+
+/* ── Navigation ─────────────────────────────────────────────── */
+
+#nav {
+  background-color: var(--nav-bg);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+#nav a {
+  color: var(--nav-text) !important;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+#nav a:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: var(--nav-text) !important;
+}
+
+#nav a.active {
+  background: rgba(255, 255, 255, 0.15) !important;
+}
+
+#nav a.active:before {
+  border-top-color: var(--nav-bg) !important;
+}
+
+/* ── Wrappers ────────────────────────────────────────────────── */
+
+.wrapper {
+  background-image: none;
+  box-shadow: none;
+}
+
+/* Hero / plain content sections */
+.wrapper.style1 {
+  background-color: var(--bg);
+  background-image: none;
+}
+
+/* Research, teaching, writing — subtle surface tint */
+.wrapper.style2 {
+  background-color: var(--surface);
+  background-image: none;
+  color: var(--text);
+}
+
+.wrapper.style2 h2,
+.wrapper.style2 h3 {
+  color: var(--text);
+}
+
+.wrapper.style2 header > p {
+  color: #64748b;
+}
+
+@media (prefers-color-scheme: dark) {
+  .wrapper.style2 header > p {
+    color: #94a3b8;
+  }
+}
+
+/* Projects — always dark for contrast, images pop against it */
+.wrapper.style3 {
+  background-color: #1e293b;
+  background-image: none;
+  text-shadow: none;
+  color: #94a3b8;
+}
+
+.wrapper.style3 h2,
+.wrapper.style3 h3 {
+  color: #f1f5f9;
+}
+
+.wrapper.style3 header > p {
+  color: #94a3b8;
+}
+
+/* Footer */
+.wrapper.style4 {
+  background-color: #0f172a;
+  text-shadow: none;
+  color: #64748b;
+}
+
+.wrapper.style4 h1,
+.wrapper.style4 h2,
+.wrapper.style4 h3 {
+  color: #f1f5f9;
+}
+
+/* ── Boxes ───────────────────────────────────────────────────── */
+
+.box {
+  background-color: var(--box-bg);
+  background-image: none;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+
+.box h3 {
+  color: var(--text);
+}
+
+.box p {
+  color: #64748b;
+}
+
+@media (prefers-color-scheme: dark) {
+  .box {
+    border-color: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  }
+}
+
+/* Research section: style1 boxes on style2 surface */
+.wrapper.style2 .box.style1 .material-icons {
+  color: var(--accent) !important;
+}
+
+/* Project cards: boxes on the always-dark style3 section */
+.wrapper.style3 article.box {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper.style3 article.box h3 a {
+  color: #f1f5f9 !important;
+}
+
+.wrapper.style3 article.box p {
+  color: #94a3b8;
+}
+
+/* ── Hero section ────────────────────────────────────────────── */
+
+#top p {
+  color: #475569;
+  line-height: 1.85;
+}
+
+@media (prefers-color-scheme: dark) {
+  #top p {
+    color: #94a3b8;
+  }
+}
+
+/* ── Spacing: give sections room to breathe ─────────────────── */
+
+@media screen and (max-width: 1280px) {
+  .wrapper {
+    padding: 5em 0;
+  }
+  #top {
+    padding: 6em 0;
+  }
+}
+
+/* ── Fix the footer bullet (that "weird circle") ─────────────── */
+
+.wrapper.style4 footer ul,
+#contact footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* ── Social icons ─────────────────────────────────────────────── */
+
+ul.social li a:before {
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+/* ── Images ──────────────────────────────────────────────────── */
+
+img, .icon {
+  filter: none;
+}
+
+/* ── Work page intro header ──────────────────────────────────── */
+
+.work-page-intro {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.work-page-intro h2 {
+  font-size: 2.25em;
+  margin-bottom: 0.4em;
+  color: var(--text);
+}
+
+.work-page-intro p {
+  font-size: 1.15em;
+  color: #64748b;
+  line-height: 1.75;
+}
+
+@media (prefers-color-scheme: dark) {
+  .work-page-intro p {
+    color: #94a3b8;
+  }
+}
+
+/* ── Video project card thumbnail ───────────────────────────── */
+
+.video-card-header {
+  display: block;
+  margin: -2em -2em 1.5em -2em;
+  overflow: hidden;
+  max-height: 800px;
+}
+
+.video-card-header video {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* ── Blog placeholder cards ──────────────────────────────────── */
+
+.post-placeholder-header {
+  display: block;
+  margin: -2em -2em 1.5em;
+  height: 160px;
+}
+
+.post-placeholder-header.gbt {
+  background: linear-gradient(135deg, #312e81 0%, #4f46e5 55%, #818cf8 100%);
+}
+
+.post-placeholder-header.hardware {
+  background: linear-gradient(135deg, #065f46 0%, #059669 55%, #34d399 100%);
+}
+
+.post-placeholder-header.teaching {
+  background: linear-gradient(135deg, #7c2d12 0%, #c2410c 55%, #fb923c 100%);
+}
+
+.soon-tag {
+  display: inline-block;
+  margin-top: 0.75em;
+  padding: 3px 10px;
+  border-radius: 12px;
+  background: rgba(79, 70, 229, 0.1);
+  color: var(--accent);
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.wrapper.style3 .soon-tag {
+  background: rgba(129, 140, 248, 0.15);
+  color: #818cf8;
+}
+
+/* ── In the News list ────────────────────────────────────────── */
+
+.news-list {
+  list-style: none;
+  padding-left: 0;
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.news-list li {
+  display: flex;
+  gap: 1.5em;
+  padding: 1.1em 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  align-items: flex-start;
+  padding-left: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .news-list li {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+  }
+}
+
+.news-list li:last-child {
+  border-bottom: none;
+}
+
+.news-year {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: var(--accent);
+  min-width: 2.5em;
+  padding-top: 0.2em;
+  letter-spacing: 0.02em;
+}
+
+.news-content {
+  flex: 1;
+}
+
+.news-content a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95em;
+}
+
+.news-content a:hover {
+  color: var(--accent) !important;
+  opacity: 1;
+}
+
+.news-source {
+  display: block;
+  margin-top: 0.2em;
+  font-size: 0.82em;
+  color: #94a3b8;
+}

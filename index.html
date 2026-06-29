@@ -8,23 +8,22 @@
 <head>
 	<title>Osama Dabbousi</title>
 	<meta charset="UTF-8" />
-	<meta name="description" 
-		  content="Learn more about Osama Dabbousi, a computer scientist specializing in high performance, GPGPU programming and scientific computing.">
+	<meta name="description"
+		  content="Osama Dabbousi: GPU algorithm design, scientific simulation, and DPhil incoming at Oxford as a Rhodes Scholar.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/custom.css" />
 </head>
 <body class="is-preload">
 
 	<!-- Nav -->
 	<nav id="nav">
 		<ul class="container">
-			<li><a href="#top">Top</a></li>
-			<li><a href="#skills">Skills</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="#contact">Contact</a></li>
-			<li><a href="files/OsamaDabbousi_Resume.pdf" download="Resume-Osama_Dabbousi.pdf">Resume</a></li>
+			<li><a href="#top">About</a></li>
+			<li><a href="work.html">Work</a></li>
+			<li><a href="files/Osama_Dabbousi_CV.pdf" download="CV-OsamaDabbousi.pdf">CV</a></li>
 
 		</ul>
 	</nav>
@@ -41,9 +40,7 @@
 						<h1>Hi, I'm <strong>Osama</strong>!</h1>
 					</header>
 					<p>
-						Welcome to my portfolio! I'm a researcher working towards my Master's in Computer Science at KAUST.
-						I love tackling tough and intellectually stimulating problems across a range of CS topics.
-						Scroll through this page to learn more about my interests and some of my proudest work.
+						M.S. candidate at KAUST finishing a GPU-accelerated acoustic simulation thesis, and incoming DPhil student at Oxford as a Rhodes Scholar. Research in GPU algorithm design and scientific simulation. Teaching assistant for four courses across Boston University and KAUST.
 					</p>
 				</div>
 			</div>
@@ -51,38 +48,38 @@
 	</article>
 
 
-	<!-- Work -->
-	<article id="skills" class="wrapper style2">
+	<!-- Research -->
+	<article id="research" class="wrapper style2">
 		<div class="container">
 			<header>
-				<h2>Skills & Interests</h2>
-				<p>My current interests surround parallel and high-performance computing, and how our algorithms and data-structures can take full advantage of them.</p>
+				<h2>Research</h2>
+				<p>Research at the intersection of GPU algorithm design and scientific simulation.</p>
 			</header>
 			<div class="row aln-center">
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
-						<i class="material-icons" style="font-size: 64px; color: #001F3F">hub</i>
-						<h3>Deep Learning & AI</h3>
+						<i class="material-icons" style="font-size: 64px; color: var(--accent)">memory</i>
+						<h3>GPU & Scientific Simulation</h3>
 						<p>
-							During my BS at Boston University I learnt how to design and fine-tune neural network pipelines for tasks ranging from chess and backgammon to geological thin-sections and cancer classification.
+							My M.S. thesis, ASTRA-GBT, is a multi-GPU framework for acoustic simulation across arbitrary environments. We pushed it to 2,048 GH200 GPUs on the Shaheen III supercomputer, achieving 91% strong-scaling efficiency on a city-scale acoustic model.
 						</p>
 					</section>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
-						<i class="material-icons" style="font-size: 64px; color: #001F3F">dns</i>
-						<h3> High-Performance Computing </h3>
+						<i class="material-icons" style="font-size: 64px; color: var(--accent)">school</i>
+						<h3>Teaching & Communication</h3>
 						<p>
-							My Master's has focused on using parallel computation and intelligent algorithms to optimize the execution of heavy-duty computations like visual ray-tracing, image compression and acoustic beam-tracing.
+							I've TA'd four courses across BU and KAUST: algorithms, NLP, probability, and numerical linear algebra. Science communication, finding ways to make hard ideas feel accessible, has become one of my main interests outside the lab.
 						</p>
 					</section>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
-						<i class="material-icons" style="font-size: 64px; color: #001F3F">functions</i>
-						<h3>Scientific Computing</h3>
+						<i class="material-icons" style="font-size: 64px; color: var(--accent)">explore</i>
+						<h3>What's Next</h3>
 						<p>
-							Scientific models and simulations provide some of the most important (and satisfying) applications of HPC & AI. Much of my work in those fields intersects with topics like acoustics & computational fluid dynamics. 
+							Incoming DPhil in Engineering Science at Oxford as a Rhodes Scholar, working with Prof. Paul Goulart and Prof. Wes Armour at the intersection of optimization theory and GPU computing.
 						</p>
 					</section>
 				</div>
@@ -91,91 +88,21 @@
 	</article>
 
 
-	<!-- Portfolio -->
-	<article id="portfolio" class="wrapper style3">
+	<!-- Teaching -->
+	<article id="teaching" class="wrapper style2">
 		<div class="container">
 			<header>
-				<h2>Portfolio</h2>
-				<p>A mix of my most challenging and rewarding projects through the years.</p>
+				<h2>Teaching</h2>
+				<p>Teaching assistant at Boston University and KAUST, across four courses and two continents.</p>
 			</header>
 			<div class="row">
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="files/GaussianBeamTracing_OsamaDabbousi.pdf" class="image featured"><img src="images/GBT_image.jpg" alt="" /></a>
-						<h3><a href="files/GaussianBeamTracing_OsamaDabbousi.pdf">GPU-accelerated Gaussian Beam-Tracing</a></h3>
-						<p>
-							(MSc Thesis) Multi-GPU implementation of Gaussian-Beam Tracing for acoustic simulation.
-							Handles arbitrary user-defined meshes and noise-sources, and visualizes and plots results.
-						</p>
-						<span class="tech-box python">Python</span>
-						<span class="tech-box cpp">C++</span>
-						<span class="tech-box cuda-cpp">CUDA</span>
-						<span class="tech-box cupy">CuPy</span>
-						<span class="tech-box pyvista">PyVista</span>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="https://github.com/OsamaDabb/raytracing-graphics" class="image featured">
-							<img src="images/raytracing_image.jpg" alt="ray-tracing sample image" />
-						</a>
-						<h3><a href="https://github.com/OsamaDabb/raytracing-graphics">Raytracing from Scratch</a></h3>
-						<p>
-							Raytracing simulation built with no external libraries in C++, which handles shading, shadows, reflection and movement & rotation of objects. 
-						</p>
-						<span class="tech-box cpp">C++</span>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="https://github.com/OsamaDabb/SVD_compression_project" class="image featured">
-							<img src="images/SVD_compression_visualization_border.png"
-								 alt="A graphic comparing images from a dataset before and after compression using SVD" />
-						</a>
-						<h3><a href="https://github.com/OsamaDabb/SVD_compression_project">Large-scale Dataset Compression with SVD</a></h3>
-						<p>SVD and quantization based compression of the large-scale Red Sea temperature dataset (shown above).</p>
-						<span class="tech-box python">Python</span>
-						<span class="tech-box pytorch">PyTorch</span>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="https://github.com/OsamaDabb/FiniteDifferencesCUDA/tree/main" class="image featured"> 	
-							<img src="images/temperature_animation-cropped.gif" alt="" />
-						</a>
-						<h3>
-							<a href="https://github.com/OsamaDabb/FiniteDifferencesCUDA/tree/main">
-								Parallel Heat Transfer Simulation with CUDA
-							</a>
-						</h3>
-						<p>GPU-powered heat transfer simulation using CUDA and finite differences.</p>
-						<span class="tech-box cpp">C++</span>
-						<span class="tech-box cuda-cpp">CUDA</span>
-						<span class="tech-box python">Python</span>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="https://github.com/OsamaDabb/Chess_anti_cheat" class="image featured">
-							<img src="images/ChessGAN_puzzle_example_border.png" alt="Chess Puzzle Being Solved Correctly by ChessGAN" />
-						</a>
-						<h3><a href="https://github.com/OsamaDabb/Chess_anti_cheat">ChessGAN</a></h3>
-						<p>(BS Capstone) Adversarial architecture which trains a chess agent by penalizing non-humanlike moves.</p>
-						<span class="tech-box python">Python</span>
-						<span class="tech-box pytorch">PyTorch</span>
-						<span class="tech-box pandas">Pandas</span>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="https://github.com/OsamaDabb/BackgammonNN" class="image featured">
-							<img src="images/backgammon_animation.gif" alt="A gif of a game of backgammon played by the MCTS algorithm" />
-						</a>
-						<h3><a href="https://github.com/OsamaDabb/BackgammonNN">Backgammon-AI</a></h3>
-						<p>Backgammon playing agent which uses probabilistic Monte-Carlo tree search for decision-making.</p>
-						<span class="tech-box python">Python</span>
-						<span class="tech-box tensorflow">Tensorflow</span>
-					</article>
+				<div class="col-8 col-12-medium" style="margin: 0 auto; text-align: left;">
+					<p>
+						I've been a teaching assistant for four courses across Boston University and KAUST: Introduction to Algorithms, Natural Language Processing, Probability & Statistics, and Numerical Linear Algebra. There's a specific satisfaction in finding the exact explanation that makes something click for someone who's been stuck on it for days.
+					</p>
+					<p>
+						More recently I've been thinking about scientific communication more broadly, finding ways to make technical ideas accessible to people outside the field. My M.S. thesis defence was a deliberate first attempt at that, and the response convinced me to keep going. Alongside the research, I've spent time mentoring students through graduate school applications, which I think of as teaching in a different form.
+					</p>
 				</div>
 			</div>
 		</div>
@@ -192,9 +119,7 @@
 				<li><a href="https://www.youtube.com/@osamadabbousi4974" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
 			</ul>
 			<footer style="padding:0rem">
-				<ul>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
+				<p style="font-size:0.9em; color:#64748b;">Design: <a href="http://html5up.net" style="color:#64748b;">HTML5 UP</a></p>
 			</footer>
 		</div>
 	</article>
