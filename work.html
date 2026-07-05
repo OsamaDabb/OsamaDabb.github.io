@@ -9,18 +9,18 @@
 	<title>Work — Osama Dabbousi</title>
 	<meta charset="UTF-8" />
 	<meta name="description"
-		  content="Projects, writing, and research by Osama Dabbousi: GPU simulation, algorithm design, and more.">
+		  content="Portfolio, blog, and press mentions for Osama Dabbousi: GPU simulation, algorithm design, and more.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="Osama Dabbousi" />
 	<meta property="og:title" content="Work — Osama Dabbousi" />
-	<meta property="og:description" content="Projects, writing, and research by Osama Dabbousi: GPU simulation, algorithm design, and more.">
+	<meta property="og:description" content="Portfolio, blog, and press mentions for Osama Dabbousi: GPU simulation, algorithm design, and more.">
 	<meta property="og:image" content="https://osamadabb.github.io/images/Personal%20Picture.jpeg" />
 	<meta property="og:url" content="https://osamadabb.github.io/work.html" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Work — Osama Dabbousi" />
-	<meta name="twitter:description" content="Projects, writing, and research by Osama Dabbousi: GPU simulation, algorithm design, and more.">
+	<meta name="twitter:description" content="Portfolio, blog, and press mentions for Osama Dabbousi: GPU simulation, algorithm design, and more.">
 	<meta name="twitter:image" content="https://osamadabb.github.io/images/Personal%20Picture.jpeg" />
 
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -35,6 +35,7 @@
 		<ul class="container">
 			<li><a href="index.html">About</a></li>
 			<li><a href="#top">Work</a></li>
+			<li><a href="contact.html">Contact</a></li>
 			<li><a href="files/Osama_Dabbousi_CV.pdf" download="CV-OsamaDabbousi.pdf">CV</a></li>
 		</ul>
 	</nav>
@@ -43,22 +44,29 @@
 	<article id="top" class="wrapper style1">
 		<div class="container">
 			<div class="work-page-intro">
-				<h2>Projects & Writing</h2>
+				<h2>Portfolio, Blog & News</h2>
 				<p>
 					A closer look at the things I build and think about,
-					with blog posts in progress that'll go into the 
+					with blog posts in progress that'll go into the
 					story behind some of the projects.
 				</p>
+			</div>
+			<div class="work-subnav">
+				<ul>
+					<li><a href="#portfolio" class="scrolly">Portfolio</a></li>
+					<li><a href="#blog" class="scrolly">Blog</a></li>
+					<li><a href="#news" class="scrolly">News</a></li>
+				</ul>
 			</div>
 		</div>
 	</article>
 
 
-	<!-- Projects -->
-	<article id="projects" class="wrapper style3">
+	<!-- Portfolio -->
+	<article id="portfolio" class="wrapper style3">
 		<div class="container">
 			<header>
-				<h2>Projects</h2>
+				<h2>Portfolio</h2>
 				<p>A mix of my most challenging and rewarding work through the years.</p>
 			</header>
 			<div class="row">
@@ -150,55 +158,55 @@
 	</article>
 
 
-	<!-- Writing / Blog -->
-	<article id="writing" class="wrapper style2">
+	<!-- Blog -->
+	<article id="blog" class="wrapper style2">
 		<div class="container">
 			<header>
-				<h2>Writing</h2>
+				<h2>Blog</h2>
 				<p>Long-form write-ups on projects and technical ideas. Coming soon.</p>
 			</header>
-			<div class="row">
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<div class="post-placeholder-header gbt"></div>
+			<ul class="blog-list">
+				<li>
+					<div class="blog-content">
 						<h3><a href="blog-astra-gbt.html">ASTRA-GBT: Scaling Acoustic Simulation to 2,048 GPUs</a></h3>
 						<p>
 							Algorithm design and engineering decisions behind a multi-GPU acoustic simulation framework, scaled to 2,048 GH200 GPUs at 91% strong-scaling efficiency on Shaheen III.
 						</p>
-						<span class="tech-box cuda-cpp">CUDA</span>
-						<span class="tech-box python">Python</span>
-						<span class="tech-box cupy">CuPy</span>
-						<br>
-						<span class="soon-tag">Coming Soon</span>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<div class="post-placeholder-header hardware"></div>
+						<div class="blog-meta">
+							<span class="tech-box cuda-cpp">CUDA</span>
+							<span class="tech-box python">Python</span>
+							<span class="tech-box cupy">CuPy</span>
+							<span class="soon-tag">Coming Soon</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="blog-content">
 						<h3><a href="blog-chessggan.html">ChessGAN: Building a Chess Engine That Plays Like a Human</a></h3>
 						<p>
 							The story behind my undergraduate capstone: using an adversarial architecture to train a chess agent that plays more like a person than a computer.
 						</p>
-						<span class="tech-box python">Python</span>
-						<span class="tech-box pytorch">PyTorch</span>
-						<span class="tech-box pandas">Pandas</span>
-						<br>
-						<span class="soon-tag">Coming Soon</span>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<div class="post-placeholder-header teaching"></div>
+						<div class="blog-meta">
+							<span class="tech-box python">Python</span>
+							<span class="tech-box pytorch">PyTorch</span>
+							<span class="tech-box pandas">Pandas</span>
+							<span class="soon-tag">Coming Soon</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="blog-content">
 						<h3><a href="blog-teaching.html">What Teaching Taught Me</a></h3>
 						<p>
 							A personal account of four semesters as a teaching assistant: what the experience taught me, and what I think matters most for good teaching.
 						</p>
-						<span class="tech-box" style="background:#e2e8f0;color:#1e293b;">Teaching</span>
-						<br>
-						<span class="soon-tag">Coming Soon</span>
-					</article>
-				</div>
-			</div>
+						<div class="blog-meta">
+							<span class="tech-box" style="background:#e2e8f0;color:#1e293b;">Teaching</span>
+							<span class="soon-tag">Coming Soon</span>
+						</div>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</article>
 
