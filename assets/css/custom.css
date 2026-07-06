@@ -347,19 +347,34 @@ form textarea {
   }
 }
 
-/* ── Video project card thumbnail ───────────────────────────── */
+/* ── Portfolio project card thumbnail (image or video) ────────── */
 
-.video-card-header {
+.portfolio-media {
   display: block;
   margin: -2em -2em 1.5em -2em;
   overflow: hidden;
-  max-height: 800px;
 }
 
-.video-card-header video {
-  width: 100%;
+.portfolio-media img,
+.portfolio-media video {
   display: block;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+/* Equal-height, variable-width cards: each card's width is derived from
+   its media's aspect ratio (--ar, set inline per card in work.html), so
+   a wide/rectangular thumbnail renders as wide as it needs to instead of
+   getting cropped or squashed down to match the square ones. flex-grow
+   is weighted by --ar and flex-shrink is uniform, which keeps every card
+   in a row scaled by the same factor -- same height, true aspect ratio. */
+@media screen and (min-width: 981px) {
+  #portfolio .row > div {
+    width: auto;
+    flex-grow: var(--ar, 1);
+    flex-shrink: 1;
+    flex-basis: calc(var(--ar, 1) * 240px);
+  }
 }
 
 .soon-tag {
@@ -475,4 +490,56 @@ form textarea {
   margin-top: 0.2em;
   font-size: 0.82em;
   color: #94a3b8;
+}
+
+/* ── Hover-preview link (city-scale acoustic model → GBT video) ─ */
+
+#gbt {
+  scroll-margin-top: 4.5em;
+}
+
+.has-video-preview {
+  overflow: visible;
+}
+
+.video-hover-link {
+  position: relative;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+}
+
+.video-hover-link:hover {
+  opacity: 1 !important;
+}
+
+.video-hover-preview {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px) scale(0.96);
+  width: min(480px, 90vw);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+  z-index: 20;
+}
+
+.video-hover-preview video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.video-hover-link:hover .video-hover-preview,
+.video-hover-link:focus .video-hover-preview {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0) scale(1);
 }
