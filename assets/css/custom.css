@@ -395,6 +395,57 @@ form textarea {
   color: #818cf8;
 }
 
+/* ── Long-form post body (blog articles) ───────────────────────── */
+
+.post-date {
+  color: #94a3b8;
+  font-size: 0.9em;
+  margin-bottom: 1.5em;
+}
+
+.post-body p {
+  margin-bottom: 1.4em;
+}
+
+.post-body h3 {
+  margin-top: 2em;
+}
+
+.post-body ul {
+  margin-bottom: 1.4em;
+}
+
+.post-body .image.fit video {
+  display: block;
+  width: 100%;
+}
+
+.post-body .image.fit {
+  margin-bottom: 1.4em;
+}
+
+.post-body .image.inline {
+  display: block;
+  max-width: 320px;
+  margin: 0 auto 1.4em;
+}
+
+.post-body .image.inline img {
+  width: 100%;
+}
+
+.post-body .image.small {
+  display: block;
+  height: 250px;
+  margin: 0 auto 1.4em;
+  text-align: center;
+}
+
+.post-body .image.small img {
+  height: 100%;
+  width: auto;
+}
+
 /* ── Dense list rows (In the News / Blog) ─────────────────────── */
 
 .news-list,
