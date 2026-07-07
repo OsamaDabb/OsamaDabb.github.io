@@ -35,14 +35,19 @@ with site-specific overrides layered in `assets/css/custom.css` (loaded after
    helpers so you don't have to hand-style every element:
    - `<p>` — standard paragraph
    - `<h3>` — section heading
-   - `<span class="image fit">...</span>` — full-width image or
+   - `<figure class="image fit">...</figure>` — full-width image or
      `<video autoplay loop muted playsinline>` (used for large diagrams/demo
      clips)
-   - `<span class="image inline">...</span>` — small centered image, capped
-     at 320px wide (used for asides like the XKCD comic in the thesis-defense
+   - `<figure class="image inline">...</figure>` — small centered image,
+     capped at 320px wide (used for asides like the XKCD comic in the
+     thesis-defense post)
+   - `<figure class="image small">...</figure>` — small centered image
+     capped at 250px tall (used for the closing photo in the thesis-defense
      post)
-   - `<span class="image small">...</span>` — small centered image capped at
-     250px tall (used for the closing photo in the thesis-defense post)
+   - Add `<figcaption>...</figcaption>` as the last child of any of the
+     three `figure` variants above to caption it (styled automatically —
+     small, muted, centered). Use it to credit external sources (e.g. the
+     XKCD comic) or to describe what a diagram/animation shows.
 5. Add the post to the `.blog-list` in `work.html` (`<h3><a href="...">`,
    teaser `<p>`, and `.blog-meta` tag(s)). Remove the `<span class="soon-tag">`
    once the post is actually live — its presence is what marks a post as
