@@ -16,12 +16,12 @@
 	<meta property="og:site_name" content="Osama Dabbousi" />
 	<meta property="og:title" content="Defending My Thesis to Three Different Audiences — Osama Dabbousi" />
 	<meta property="og:description" content="What presenting my M.S. thesis on acoustic simulation to a room ranging from my defense committee to my nine-year-old brother taught me about explaining hard ideas.">
-	<meta property="og:image" content="https://osamadabb.github.io/images/Personal%20Picture.jpeg" />
+	<meta property="og:image" content="https://osamadabb.github.io/images/thesis_presenting.jpg" />
 	<meta property="og:url" content="https://osamadabb.github.io/blog-thesis-defense.html" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Defending My Thesis to Three Different Audiences — Osama Dabbousi" />
 	<meta name="twitter:description" content="What presenting my M.S. thesis on acoustic simulation to a room ranging from my defense committee to my nine-year-old brother taught me about explaining hard ideas.">
-	<meta name="twitter:image" content="https://osamadabb.github.io/images/Personal%20Picture.jpeg" />
+	<meta name="twitter:image" content="https://osamadabb.github.io/images/thesis_presenting.jpg" />
 
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -147,18 +147,18 @@
 						<figcaption>Where classical ray acoustics breaks down in city-like conditions.</figcaption>
 					</figure>
 
-					<p>And most importantly, my Magnum Opus for the theoretical section. In practice runs, it was at this slide that things really clicked for audience members.</p>
+					<p>And most importantly, my Magnum Opus for the theoretical section. This one took the longest of any slide to get right, and for good reason &mdash; it's effectively a full 2D recreation of the GBT method itself, built in manim from scratch purely to be watched rather than computed. In practice runs, it was at this slide that things really clicked for audience members.</p>
 
 					<figure class="image fit">
 						<video autoplay loop muted playsinline>
 							<source src="images/FullPipeline.mp4" type="video/mp4" />
 						</video>
-						<figcaption>The full Gaussian Beam-Tracing pipeline, animated end to end.</figcaption>
+						<figcaption>The full Gaussian Beam-Tracing pipeline, animated end to end: a fan of beams launched from the source and bent as they propagate, each one flagged and stored as a (P, Q) pair the moment it crosses the receiver plane, and finally summed into the total pressure trace at the receiver.</figcaption>
 					</figure>
 
 					<h3>Making Good on Promises &mdash; (Results)</h3>
 
-					<p>This is a pivotal moment in the presentation. The audience's patience is wearing thin, and you've made a number of grandiose claims about your method &mdash; so it's time to start delivering. For my method, here has been my claim throughout the defense: building on an existing method which has been shown to be accurate under city-like conditions (wind, changes in temperature, buildings), and which I have claimed can simulate these conditions on anything from a simple workstation, up to a world-class supercomputer. Well, in a scramble of bash scripts and PyVista visualizations the literal day before my defense (there were some technical difficulties as we were the first project to use KAUST's new GPU partition on their Shaheen III supercomputer), I was able to make good on that promise. First, an animation made from data generated on my workstation showed the method generating results for a urban air vehicle flying over the 1.5&nbsp;km&sup2; mesh of Riyadh's financial district, in a grand total of 196s!</p>
+					<p>This is a pivotal moment in the presentation. The audience's patience is wearing thin, and you've made a number of grandiose claims about your method &mdash; so it's time to start delivering. For my method, here has been my claim throughout the defense: building on an existing method which has been shown to be accurate under city-like conditions (wind, changes in temperature, buildings), and which I have claimed can simulate these conditions on anything from a simple workstation, up to a world-class supercomputer. Well, in a scramble of bash scripts and PyVista visualizations the literal day before my defense (there were some technical difficulties as we were the first project to use KAUST's new GPU partition on their Shaheen III supercomputer), I was able to make good on that promise. First, an animation made from data generated on my workstation showed the method generating results for a urban air vehicle (think flying taxi) flying over the 1.5&nbsp;km&sup2; mesh of Riyadh's financial district, in a grand total of 196s!</p>
 
 					<figure class="image fit">
 						<video autoplay loop muted playsinline>
