@@ -4,6 +4,15 @@ Personal portfolio/blog site for Osama Dabbousi, hosted on GitHub Pages at
 `osamadabb.github.io` (repo: `OsamaDabb/OsamaDabb.github.io`). Plain static
 HTML/CSS/JS — no build step, no Jekyll, no framework. Pages are served as-is.
 
+## Session backlog
+
+`backlog.txt` at the repo root is the running log of work sessions on this
+site. **Every session MUST start by reading `backlog.txt`** to pick up
+context on what was last worked on and what's next. **Every session MUST
+end by updating `backlog.txt`** — append a dated entry summarizing what was
+done and refresh the "Next up" list before finishing. This applies even to
+short sessions; do not skip the update because the session felt minor.
+
 Base theme is "Miniport" by HTML5 UP (`assets/css/main.css`, `assets/js/*`),
 with site-specific overrides layered in `assets/css/custom.css` (loaded after
 `main.css`, so it wins the cascade). Prefer editing `custom.css` over touching

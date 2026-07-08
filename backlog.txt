@@ -1,0 +1,21 @@
+BACKLOG
+=======
+Running log of work sessions on this site. Read this at the start of every
+session; update it at the end of every session (see CLAUDE.md).
+
+--------------------------------------------------------------------------
+2026-07-08
+--------------------------------------------------------------------------
+Done:
+- Reviewed blog-thesis-defense.html, fixed FullPipeline.mp4 caption (verified
+  against actual video frames) + noted the manim effort behind it.
+- Glossed "urban air vehicle" as "flying taxi", removed stale "Coming soon"
+  in work.html, fixed og:image to use the real hero photo, deleted unused
+  kafd_conv_square.mp4. Committed as f0cc029.
+- Drafted 3 "so what I learned" additions to the thesis post (content ok,
+  tone not Osama's yet) — marked with grep-able "EDIT HERE" comments.
+  Not committed.
+
+Next up:
+- Rewrite the 3 "EDIT HERE" blocks in blog-thesis-defense.html in Osama's
+  voice, remove markers, commit.
