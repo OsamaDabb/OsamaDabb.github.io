@@ -19,3 +19,21 @@ Done:
 Next up:
 - Rewrite the 3 "EDIT HERE" blocks in blog-thesis-defense.html in Osama's
   voice, remove markers, commit.
+
+--------------------------------------------------------------------------
+2026-07-09
+--------------------------------------------------------------------------
+Done:
+- Applied 29 mechanical proofreading fixes to blog-thesis-defense.html from
+  an external review pass (typos, missing commas/periods, comma splices,
+  a/an agreement, duplicate words) — no rewording or restructuring.
+  Not committed.
+- Checked the review's concern about nested emphasis markers in video/image
+  captions (markdown *...* inside *...*) — doesn't apply, captions use real
+  <em> tags in plain HTML, not markdown, so no rendering issue exists.
+
+Next up:
+- Rewrite the 3 "EDIT HERE" blocks in blog-thesis-defense.html in Osama's
+  voice, remove markers, commit (carried over).
+- Commit today's 29 proofreading fixes (currently uncommitted working-tree
+  changes).
