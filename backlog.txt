@@ -37,3 +37,48 @@ Next up:
   voice, remove markers, commit (carried over).
 - Commit today's 29 proofreading fixes (currently uncommitted working-tree
   changes).
+
+--------------------------------------------------------------------------
+2026-07-22
+--------------------------------------------------------------------------
+Done:
+- Full writing-quality + accuracy review of blog-thesis-defense.html,
+  index.html, work.html, contact.html (requested by Osama). Critique: post's
+  structure (three-audiences framing, section headers mirroring defense
+  beats) is strong; opening runs long before getting to the point (flagged
+  in-text by the post itself, which is a sign to just tighten it rather than
+  lampshade it); one run-on/broken-parallel sentence in the "Audience 2"
+  bullet still needs a look.
+- Confirmed the "Wes Armour" typo Osama spotted was already fixed
+  (uncommitted) in index.html.
+- Found and fixed new typos: "privilige" -> "privilege" (index.html),
+  "familarity" -> "familiarity" and "highschool" -> "high school"
+  (blog-thesis-defense.html), plus stray leading/trailing whitespace inside
+  a couple of <p> tags.
+- Removed the last 2 of 3 lingering "EDIT HERE" HTML comment markers in
+  blog-thesis-defense.html (lines ~124, ~141) — these were still live/
+  committed on the site with the marker comments wrapping them; text content
+  itself was left as-is (not rewritten), so it's still worth Osama reading
+  those two sentences to confirm they sound like his voice, per the original
+  backlog note that tone wasn't fully his yet.
+- Per Osama's call: dropped the second "Rhodes Scholar" mention on
+  index.html (was in both the hero and the "What's Next" card) — kept it
+  in the hero only, "What's Next" card now just names the DPhil + advisors.
+- Left as an open question, not changed: the blog post's Shaheen III run
+  cites 128 GH200 GPUs (day before defense) while index.html/work.html cite
+  2,048 GPUs — plausibly a later scale-up after the defense, but worth
+  Osama double-checking the numbers agree with what actually happened.
+- All changes above are still UNCOMMITTED working-tree edits, stacked on
+  top of the prior session's uncommitted 29 proofreading fixes.
+
+Next up:
+- Rewrite the "Audience 2" bullet's broken-parallel sentence ("...baseline
+  understanding of things like calculus, computational algorithms, and have
+  some idea...") for clarity.
+- Consider tightening the post's opening (bicep anecdote through XKCD
+  comic) — currently 4 paragraphs before the piece states its own point.
+- Osama to sanity-check the two "trick I leaned on..." sentences (now
+  marker-free) read in his voice.
+- Commit the accumulated uncommitted changes across index.html and
+  blog-thesis-defense.html (typo fixes, Rhodes dedup, EDIT HERE cleanup,
+  plus the carried-over 29 proofreading fixes) once Osama gives the go-ahead.
